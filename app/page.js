@@ -5,7 +5,7 @@ import Section from "@/components/section";
 import Features from "@/components/features";
 import FeatureSections from '@/components/MainFeatures'
 import Amenities from "@/components/Amenities";
-import MapContainer from '@/components/maps'
+// import MapContainer from '@/components/maps'
 
 
 import SiteHeader from "@/components/siteheader";
@@ -18,7 +18,7 @@ export default function Home() {
         <Features/>
         <FeatureSections/>
         <Amenities/>
-        <MapContainer/>
+        {/* <MapContainer/> */}
         <ContactForm/>
     </div>
   );
