@@ -86,7 +86,7 @@ export default function ContactForm() {
             
             id="message"
             placeholder="Enter Your Message"
-            className='w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black my-5'
+            className='w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black my-5 border' 
           ></textarea>
         </div>
         <button className="bg-green-700 p-3 text-white  px-5  font-bold justify-center text-center" type="submit">
