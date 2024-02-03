@@ -39,7 +39,7 @@ export default function ContactForm() {
   };
 
   return (
-    <>
+    <div className=" flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-12 sm:mt-20">
       <form
         onSubmit={handleSubmit}
         className="py-4 mt-4 border-t flex flex-col gap-5 text-center justify-center"
@@ -86,7 +86,7 @@ export default function ContactForm() {
             
             id="message"
             placeholder="Enter Your Message"
-            className='text-black h-32 w-32 border border-black '
+            className='w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black my-5'
           ></textarea>
         </div>
         <button className="bg-green-700 p-3 text-white  px-5  font-bold justify-center text-center" type="submit">
@@ -106,6 +106,6 @@ export default function ContactForm() {
             </div>
           ))}
       </div>
-    </>
+    </div>
   );
 }
