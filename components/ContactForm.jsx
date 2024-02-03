@@ -42,53 +42,54 @@ export default function ContactForm() {
     <>
       <form
         onSubmit={handleSubmit}
-        className="py-4 mt-4 border-t flex flex-col gap-5"
+        className="py-4 mt-4 border-t flex flex-col gap-5 text-center justify-center"
       >
         <div>
-          <label htmlFor="fullname">Full name</label>
+          <label htmlFor="fullname" className=" px-2">Full name</label>
           <input
             onChange={(e) => setFullName(e.target.value)}
             value={fullname}
             type="text"
             id="fullname"
             placeholder="Enter Your Name"
-            className=" text-black"
+            className=" text-black py-2 border border-gray-400"
           />
         </div>
         <div>
-          <label htmlFor="phonenumber">phone number</label>
+          <label htmlFor="phonenumber" className=" px-2">phone number</label>
           <input
             onChange={(e) => setPhoneNumber(e.target.value)}
             value={phonenumber}
             type="text"
             id="phonenumber"
             placeholder="Enter Your phonenumber"
-            className=" text-black"
+            className=" text-black py-2 border border-gray-400"
           />
         </div>
         <div>
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email" className=" px-2">Email</label>
           <input
             onChange={(e) => setEmail(e.target.value)}
             value={email}
             type="email"
             id="email"
             placeholder="Enter Your Email ID"
-            className=" text-black"
+            className=" text-black py-2 border border-gray-400"
           />
         </div>
         <div>
-          <label htmlFor="message">Message</label>
+          <label htmlFor="message" className=" font-bold">Message : </label>
           <textarea
             onChange={(e) => setMessage(e.target.value)}
             value={message}
+            onFocus={true}
             
             id="message"
             placeholder="Enter Your Message"
-            className='text-black h-32'
+            className='text-black h-32 w-32 border border-black '
           ></textarea>
         </div>
-        <button className="bg-green-700 p-3 text-white font-bold" type="submit">
+        <button className="bg-green-700 p-3 text-white  px-5  font-bold justify-center text-center" type="submit">
           Send
         </button>
       </form>
