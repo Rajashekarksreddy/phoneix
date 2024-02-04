@@ -12,6 +12,7 @@ import Plans from "@/components/Plans";
 
 import SiteHeader from "@/components/siteheader";
 import Accordion from "@/components/faqs";
+import Disclaimer from "@/components/Disclaimer";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
         <Plans/>
         <Gallary/>
         <ContactForm/>
+        <Disclaimer/>
     </div>
   );
 } 
