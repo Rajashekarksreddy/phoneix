@@ -6,6 +6,7 @@ import Features from "@/components/features";
 import FeatureSections from '@/components/MainFeatures'
 import Amenities from "@/components/Amenities";
 import Gallary from '@/components/gallary'
+import Plans from "@/components/Plans";
 // import MapContainer from '@/components/maps'
 
 
@@ -23,6 +24,7 @@ export default function Home() {
         {/* <MapContainer/> */}
 
         <Accordion/>
+        <Plans/>
         <Gallary/>
         <ContactForm/>
     </div>
