@@ -40,7 +40,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className=" flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-12 sm:mt-20">
+    <div className=" flex flex-1 w-full flex-col items-center justify-center text-center px-4 mt-12 sm:mt-20 border-b-2">
       <form
         onSubmit={handleSubmit}
         className="py-4 mt-4 border-t flex flex-col gap-5 text-center justify-center"
