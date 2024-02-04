@@ -5,10 +5,12 @@ import Section from "@/components/section";
 import Features from "@/components/features";
 import FeatureSections from '@/components/MainFeatures'
 import Amenities from "@/components/Amenities";
+import Gallary from '@/components/gallary'
 // import MapContainer from '@/components/maps'
 
 
 import SiteHeader from "@/components/siteheader";
+import Accordion from "@/components/faqs";
 
 export default function Home() {
   return (
@@ -19,6 +21,9 @@ export default function Home() {
         <FeatureSections/>
         <Amenities/>
         {/* <MapContainer/> */}
+
+        <Accordion/>
+        <Gallary/>
         <ContactForm/>
     </div>
   );
