@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export default function ContactForm() {
   const [fullname, setFullName] = useState("");
@@ -89,9 +90,11 @@ export default function ContactForm() {
             className='w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black my-5 border' 
           ></textarea>
         </div>
-        <button className="bg-green-700 p-3 text-white  px-5  font-bold justify-center text-center" type="submit">
+        <Link href='/dashboard'>
+        <button className="bg-green-700 p-3 text-white  px-5  font-bold justify-center text-center" type="submit" >
           Send
         </button>
+        </Link>
       </form>
       <div className="bg-slate-100 flex flex-col">
         {error &&
